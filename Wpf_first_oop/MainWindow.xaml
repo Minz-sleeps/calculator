@@ -1,0 +1,66 @@
+﻿<Window x:Class="Wpf_first_oop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_first_oop"
+        mc:Ignorable="d"
+        Title="НИИ «Циклон»" Height="500" Width="400">
+    <Grid Background="Silver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Для TextBox -->
+            <RowDefinition Height="*"/>
+            <!-- Для кнопок -->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Текстовое поле -->
+        <TextBox Name="Text1" Grid.Row="0" Grid.ColumnSpan="4" 
+                 Margin="15" FontSize="24" VerticalContentAlignment="Center" Text="0"/>
+
+        <!-- Цифры 1-9 -->
+        <Button Grid.Row="1" Grid.Column="0" Content="7" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="8" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="9" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+
+        <Button Grid.Row="2" Grid.Column="0" Content="4" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="5" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="6" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+
+        <Button Grid.Row="3" Grid.Column="0" Content="1" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="2" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="3" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+
+        
+
+        <!-- Приколы -->
+        <Button Grid.Row="4" Grid.Column="0" Content="C" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="4" Grid.Column="2" Content=","  Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+
+        <!-- Умножение и деление -->
+        <Button Grid.Row="2" Grid.Column="4" Content="*" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+        <Button Grid.Row="1" Grid.Column="4" Content="/" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+        <Button Grid.Row="5" Grid.Column="0" Content="(" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+        <Button Grid.Row="5" Grid.Column="1" Content=")" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+
+        <!-- Ноль и операторы -->
+        <Button Grid.Row="4" Grid.Column="1" Content="0" Click="OnClick" Margin="2" FontSize="24" Background="LightSlateGray"/>
+        <Button Grid.Row="4" Grid.Column="4" Content="+" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="-" Click="OnClick" Margin="2" FontSize="24" Background="DeepSkyBlue"/>
+
+        <!-- Кнопка "=" -->
+        <Button Grid.Row="5" Grid.Column="2" Content="back" Click="OnClick" Margin="2" FontSize="24"  Background="DeepSkyBlue"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="=" 
+                Click="OnClick" Margin="2" Background="DeepSkyBlue" FontSize="24"/>
+    </Grid>
+</Window>
